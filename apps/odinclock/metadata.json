@@ -4,6 +4,7 @@
   "icon": "app.png",
   "version":"0.01",
   "description": "This is a custom clock app",
+  "supports": ["BANGLEJS2"],
   "tags": "",
   "storage": [
     {"name":"odinclock.app.js","url":"app.js"},
