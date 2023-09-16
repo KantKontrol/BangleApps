@@ -1,6 +1,5 @@
 // Load fonts
 require("Font7x11Numeric7Seg").add(Graphics);
-let locale = require("locale");
 // position on screen
 let X = 120, Y = 80;
 let drawSecondsInterval;
@@ -23,7 +22,7 @@ function draw() {
   g.setFontAlign(1,1);
 
   // pad the date - this clears the background if the date were to change length
-  var dateStr = "    "+locale.date(d)+"    ";
+  var dateStr = "    "+require("locale").date(d)+"    ";
   g.drawString(dateStr, X+28, Y+30, true /*clear background*/);
 }
 
