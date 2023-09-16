@@ -2,7 +2,7 @@
 require("Font7x11Numeric7Seg").add(Graphics);
 let locale = require("locale");
 // position on screen
-const X = 140, Y = 100;
+let X = 120, Y = 80;
 let drawSecondsInterval;
 
 
@@ -18,13 +18,20 @@ function draw() {
   g.setFontAlign(1,1); // align right bottom
   g.drawString(time, X, Y, true /*clear background*/);
 
+    // draw the date, in a normal font
+  g.setFont("12x20");
+  g.setFontAlign(1,1);
+
+  // pad the date - this clears the background if the date were to change length
+  var dateStr = "    "+locale.date(d)+"    ";
+  g.drawString(dateStr, X+28, Y+30, true /*clear background*/);
 }
 
 // Clear the screen once, at startup
 g.clear();
 // draw immediately at first
 draw();
-// now draw every second
+// now draw every minute
 let secondInterval = setInterval(draw, 60000 - (Date.now() % 60000));
 
 
@@ -34,3 +41,4 @@ Bangle.setUI("clock");
 //loading the widgets
 Bangle.loadWidgets();
 Bangle.drawWidgets();
+
