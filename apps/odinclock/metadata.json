@@ -2,7 +2,7 @@
   "name": "Odin Clock",
   "shortName":"Odin Clock",
   "icon": "valknut.png",
-  "version":"0.01",
+  "version":"0.02",
   "description": "This is a custom clock app",
   "supports": ["BANGLEJS2"],
   "tags": "",
