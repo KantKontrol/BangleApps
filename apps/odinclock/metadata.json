@@ -1,7 +1,7 @@
 { "id": "odinclock",
   "name": "Odin Clock",
   "shortName":"Odin Clock",
-  "icon": "app.png",
+  "icon": "valknut.png",
   "version":"0.01",
   "description": "This is a custom clock app",
   "supports": ["BANGLEJS2"],
