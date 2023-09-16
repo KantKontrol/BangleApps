@@ -34,7 +34,6 @@ draw();
 // now draw every minute
 let secondInterval = setInterval(draw, 60000 - (Date.now() % 60000));
 
-
 //allows showing of launcher
 Bangle.setUI("clock");
 
