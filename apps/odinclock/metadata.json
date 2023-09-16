@@ -1,6 +1,6 @@
 { "id": "odinclock",
   "name": "Odin Clock",
-  "shortName":"oc",
+  "shortName":"Odin Clock",
   "icon": "app.png",
   "version":"0.01",
   "description": "This is a custom clock app",
